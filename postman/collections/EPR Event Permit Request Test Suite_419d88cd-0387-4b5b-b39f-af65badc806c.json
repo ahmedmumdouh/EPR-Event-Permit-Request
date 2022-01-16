@@ -1,0 +1,816 @@
+{
+    "info": {
+        "_postman_id": "1bbcc05a-e220-4044-8b29-ed11ad802dee",
+        "name": "EPR Event Permit Request Test Suite",
+        "description": "API of the Event Permit Request\n\nContact Support:\n Email: a.mamdouh.c@rcu.gov.sa",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "create/update EPR request",
+            "id": "575f5c6e-cf46-48b6-9200-18d90d21844e",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-API-Key",
+                        "value": "cillum consequat velit aliqua in"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"RequestId\": null,\n    \"EventEnglishName\": \"veniam velit\",\n    \"EventArabicName\": \"aliqua non irure amet\",\n    \"EventEnglishDescription\": \"qui eu\",\n    \"EventArabicDescription\": \"exercitation laboris\",\n    \"EventType\": \"dolore dolor\",\n    \"AttractiveDazzlingElementsToAudience\": \"in amet consequat\",\n    \"AreYouEventManager\": \"esse\",\n    \"EventOrganizer\": \"tempor sit dolor magna\",\n    \"Region\": \"nulla deserunt ipsum\",\n    \"City\": \"cillum amet sint\",\n    \"EntertainmentFacility\": \"et sit\",\n    \"StreetName\": \"nostrud reprehender\",\n    \"PlaceName\": \"laboris ullamco veniam est\",\n    \"VisitorCapacityPerSameMoment\": \"tempor magna\",\n    \"VisitorCapacityPerDay\": \"Lorem sit\",\n    \"CarParkingsNumberForEvent\": \"laboris tempor dolore\",\n    \"CarParkingsNumberForDisabled\": \"cu\",\n    \"TotalAreaInMeters\": \"do\",\n    \"EventStartDate\": \"sed aliqua\",\n    \"EventEndDate\": \"Duis\",\n    \"EventHijriStartDate\": \"irure veniam deserunt dolore ut\",\n    \"EventHijriEndDate\": \"ipsum dolor\",\n    \"StartTime\": \"mollit sed incididunt\",\n    \"StartTimeAmPm\": \"n\",\n    \"EndTime\": \"ullamco est aliqua do\",\n    \"EndTimeAmPm\": \"minim eu ipsum eiusm\",\n    \"RepetitionPattern\": \"commodo mollit ullamco non\",\n    \"EventDuration\": \"eiusmod\",\n    \"ManagerName\": \"f\",\n    \"ManagerEmail\": \"do fugiat ex\",\n    \"ManagerPhoneNumber\": \"nostrud eiusm\",\n    \"ActivityType\": \"pa\",\n    \"ActivityDescription\": \"Lorem nostrud ea nisi\",\n    \"AudienceMaxNumberPerDay\": \"dolore\",\n    \"AudienceMinNumberPerDay\": \"commodo aliqua\",\n    \"AudienceExpectedMaxNumberPerMoment\": \"eiusmod cupidatat irure nisi\",\n    \"AudienceExpectedTotalNumber\": \"amet velit veniam ut\",\n    \"AudienceType\": \"et culpa\",\n    \"MinimumAge\": \"do in quis laboris\",\n    \"TicketCategory\": \"mollit\",\n    \"TicketAdvantages\": \"nulla\",\n    \"TicketPrice\": \"off\",\n    \"IndividualTicketsNumber\": \"velit culpa\",\n    \"FamilyTicketsNumber\": \"nulla ullamco\",\n    \"TicketingPlatform\": \"veniam ullamco esse culpa\",\n    \"ParticipantFullName\": \"culpa deserunt sit\",\n    \"ParticipantRole\": \"ea\",\n    \"ParticipantNationality\": \"irure ullamco sint magna\",\n    \"ParticipantIdOrPassportNumber\": \"id velit ex\",\n    \"MarketingMethodOrChannel\": \"voluptate ea veniam\",\n    \"MarketingMethodOrChannelDescription\": \"culpa in in\",\n    \"MarketingNotes\": \"reprehenderit do\",\n    \"Facebook\": \"Excepteur pariatur dolor\",\n    \"Twitter\": \"do cillum labore sunt\",\n    \"Instagram\": \"proident dolore\",\n    \"YouTube\": \"amet nostrud\",\n    \"LinkedIn\": \"proident minim\",\n    \"FavoriteHashtag\": \"ut Lorem Excepteur Duis\",\n    \"FavoriteKeywords\": \"irure non\",\n    \"PreferredShownMessagesinSocialMedia\": \"anim pariatur fugiat\",\n    \"OrganizationalJobTitle\": \"commodo\",\n    \"OrganizationalName\": \"reprehenderit adipisicing\",\n    \"OrganizationalPhoneNumber\": \"sint aliquip con\",\n    \"OrganizationalEmail\": \"Duis nostrud do eu cillum\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/eprlicenserequest",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "eprlicenserequest"
+                    ]
+                },
+                "description": "Create or Update Event Permit Request"
+            },
+            "response": [
+                {
+                    "id": "a8da28d3-a08d-4e47-9908-92fb07047233",
+                    "name": "EPR Request added/updated",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"RequestId\": \"<integer>\",\n    \"EventEnglishName\": \"<string>\",\n    \"EventArabicName\": \"<string>\",\n    \"EventEnglishDescription\": \"<string>\",\n    \"EventArabicDescription\": \"<string>\",\n    \"EventType\": \"<string>\",\n    \"AttractiveDazzlingElementsToAudience\": \"<string>\",\n    \"AreYouEventManager\": \"<string>\",\n    \"EventOrganizer\": \"<string>\",\n    \"Region\": \"<string>\",\n    \"City\": \"<string>\",\n    \"EntertainmentFacility\": \"<string>\",\n    \"StreetName\": \"<string>\",\n    \"PlaceName\": \"<string>\",\n    \"VisitorCapacityPerSameMoment\": \"<string>\",\n    \"VisitorCapacityPerDay\": \"<string>\",\n    \"CarParkingsNumberForEvent\": \"<string>\",\n    \"CarParkingsNumberForDisabled\": \"<string>\",\n    \"TotalAreaInMeters\": \"<string>\",\n    \"EventStartDate\": \"<string>\",\n    \"EventEndDate\": \"<string>\",\n    \"EventHijriStartDate\": \"<string>\",\n    \"EventHijriEndDate\": \"<string>\",\n    \"StartTime\": \"<string>\",\n    \"StartTimeAmPm\": \"<string>\",\n    \"EndTime\": \"<string>\",\n    \"EndTimeAmPm\": \"<string>\",\n    \"RepetitionPattern\": \"<string>\",\n    \"EventDuration\": \"<string>\",\n    \"ManagerName\": \"<string>\",\n    \"ManagerEmail\": \"<string>\",\n    \"ManagerPhoneNumber\": \"<string>\",\n    \"ActivityType\": \"<string>\",\n    \"ActivityDescription\": \"<string>\",\n    \"AudienceMaxNumberPerDay\": \"<string>\",\n    \"AudienceMinNumberPerDay\": \"<string>\",\n    \"AudienceExpectedMaxNumberPerMoment\": \"<string>\",\n    \"AudienceExpectedTotalNumber\": \"<string>\",\n    \"AudienceType\": \"<string>\",\n    \"MinimumAge\": \"<string>\",\n    \"TicketCategory\": \"<string>\",\n    \"TicketAdvantages\": \"<string>\",\n    \"TicketPrice\": \"<string>\",\n    \"IndividualTicketsNumber\": \"<string>\",\n    \"FamilyTicketsNumber\": \"<string>\",\n    \"TicketingPlatform\": \"<string>\",\n    \"ParticipantFullName\": \"<string>\",\n    \"ParticipantRole\": \"<string>\",\n    \"ParticipantNationality\": \"<string>\",\n    \"ParticipantIdOrPassportNumber\": \"<string>\",\n    \"MarketingMethodOrChannel\": \"<string>\",\n    \"MarketingMethodOrChannelDescription\": \"<string>\",\n    \"MarketingNotes\": \"<string>\",\n    \"Facebook\": \"<string>\",\n    \"Twitter\": \"<string>\",\n    \"Instagram\": \"<string>\",\n    \"YouTube\": \"<string>\",\n    \"LinkedIn\": \"<string>\",\n    \"FavoriteHashtag\": \"<string>\",\n    \"FavoriteKeywords\": \"<string>\",\n    \"PreferredShownMessagesinSocialMedia\": \"<string>\",\n    \"OrganizationalJobTitle\": \"<string>\",\n    \"OrganizationalName\": \"<string>\",\n    \"OrganizationalPhoneNumber\": \"<string>\",\n    \"OrganizationalEmail\": \"<string>\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/eprlicenserequest",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprlicenserequest"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"RequestId\": \"<integer>\"\n}"
+                },
+                {
+                    "id": "ca07ec43-6712-46eb-82bd-639bbdc849fc",
+                    "name": "internal error in Appian System",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"RequestId\": \"<integer>\",\n    \"EventEnglishName\": \"<string>\",\n    \"EventArabicName\": \"<string>\",\n    \"EventEnglishDescription\": \"<string>\",\n    \"EventArabicDescription\": \"<string>\",\n    \"EventType\": \"<string>\",\n    \"AttractiveDazzlingElementsToAudience\": \"<string>\",\n    \"AreYouEventManager\": \"<string>\",\n    \"EventOrganizer\": \"<string>\",\n    \"Region\": \"<string>\",\n    \"City\": \"<string>\",\n    \"EntertainmentFacility\": \"<string>\",\n    \"StreetName\": \"<string>\",\n    \"PlaceName\": \"<string>\",\n    \"VisitorCapacityPerSameMoment\": \"<string>\",\n    \"VisitorCapacityPerDay\": \"<string>\",\n    \"CarParkingsNumberForEvent\": \"<string>\",\n    \"CarParkingsNumberForDisabled\": \"<string>\",\n    \"TotalAreaInMeters\": \"<string>\",\n    \"EventStartDate\": \"<string>\",\n    \"EventEndDate\": \"<string>\",\n    \"EventHijriStartDate\": \"<string>\",\n    \"EventHijriEndDate\": \"<string>\",\n    \"StartTime\": \"<string>\",\n    \"StartTimeAmPm\": \"<string>\",\n    \"EndTime\": \"<string>\",\n    \"EndTimeAmPm\": \"<string>\",\n    \"RepetitionPattern\": \"<string>\",\n    \"EventDuration\": \"<string>\",\n    \"ManagerName\": \"<string>\",\n    \"ManagerEmail\": \"<string>\",\n    \"ManagerPhoneNumber\": \"<string>\",\n    \"ActivityType\": \"<string>\",\n    \"ActivityDescription\": \"<string>\",\n    \"AudienceMaxNumberPerDay\": \"<string>\",\n    \"AudienceMinNumberPerDay\": \"<string>\",\n    \"AudienceExpectedMaxNumberPerMoment\": \"<string>\",\n    \"AudienceExpectedTotalNumber\": \"<string>\",\n    \"AudienceType\": \"<string>\",\n    \"MinimumAge\": \"<string>\",\n    \"TicketCategory\": \"<string>\",\n    \"TicketAdvantages\": \"<string>\",\n    \"TicketPrice\": \"<string>\",\n    \"IndividualTicketsNumber\": \"<string>\",\n    \"FamilyTicketsNumber\": \"<string>\",\n    \"TicketingPlatform\": \"<string>\",\n    \"ParticipantFullName\": \"<string>\",\n    \"ParticipantRole\": \"<string>\",\n    \"ParticipantNationality\": \"<string>\",\n    \"ParticipantIdOrPassportNumber\": \"<string>\",\n    \"MarketingMethodOrChannel\": \"<string>\",\n    \"MarketingMethodOrChannelDescription\": \"<string>\",\n    \"MarketingNotes\": \"<string>\",\n    \"Facebook\": \"<string>\",\n    \"Twitter\": \"<string>\",\n    \"Instagram\": \"<string>\",\n    \"YouTube\": \"<string>\",\n    \"LinkedIn\": \"<string>\",\n    \"FavoriteHashtag\": \"<string>\",\n    \"FavoriteKeywords\": \"<string>\",\n    \"PreferredShownMessagesinSocialMedia\": \"<string>\",\n    \"OrganizationalJobTitle\": \"<string>\",\n    \"OrganizationalName\": \"<string>\",\n    \"OrganizationalPhoneNumber\": \"<string>\",\n    \"OrganizationalEmail\": \"<string>\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/eprlicenserequest",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprlicenserequest"
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "uplaod 12 documents related to the request submission or update",
+            "id": "40a0da63-806a-43c4-a324-c5fb66205036",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-API-Key",
+                        "value": "cillum consequat velit aliqua in"
+                    },
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-Document-Name",
+                        "value": "cillum consequat velit aliqua in"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "based on uploaded file type (application/pdf, image/png ....)"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {}
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/epruplaoddocuments?RequestId=41123594&DocumentType=OperatorsTrainingPlan",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "epruplaoddocuments"
+                    ],
+                    "query": [
+                        {
+                            "key": "RequestId",
+                            "value": "41123594",
+                            "description": "(Required) "
+                        },
+                        {
+                            "key": "DocumentType",
+                            "value": "OperatorsTrainingPlan",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "description": "uplaod 12 documents related to the request submission or update"
+            },
+            "response": [
+                {
+                    "id": "bc67c430-9948-4f4f-9a9c-cc6e3bcc8d6f",
+                    "name": "document uploaded to Appian Successfully",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            },
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-Document-Name",
+                                "value": "<string>"
+                            }
+                        ],
+                        "body": {
+                            "mode": "file",
+                            "file": {}
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/epruplaoddocuments?RequestId=<integer>&DocumentType=<string>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "epruplaoddocuments"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "<string>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"DocumentId\": \"<integer>\"\n}"
+                },
+                {
+                    "id": "a09d790c-2113-49ec-ad95-a65b7754b325",
+                    "name": "400 Bad Request",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            },
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-Document-Name",
+                                "value": "<string>"
+                            }
+                        ],
+                        "body": {
+                            "mode": "file",
+                            "file": {}
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/epruplaoddocuments?RequestId=<integer>&DocumentType=<string>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "epruplaoddocuments"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "<string>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                },
+                {
+                    "id": "eab745a7-6df9-4e14-a52d-2ddeaf9edfab",
+                    "name": "internal error in Appian System",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            },
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-Document-Name",
+                                "value": "<string>"
+                            }
+                        ],
+                        "body": {
+                            "mode": "file",
+                            "file": {}
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/epruplaoddocuments?RequestId=<integer>&DocumentType=<string>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "epruplaoddocuments"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "<string>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "get all EPR request details by id(including license id if uplaoded & request status)",
+            "id": "775cef9f-0282-4130-b819-0c22536b8d9d",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-API-Key",
+                        "value": "cillum consequat velit aliqua in"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/eprgetrequestbyid?RequestId=41123594",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "eprgetrequestbyid"
+                    ],
+                    "query": [
+                        {
+                            "key": "RequestId",
+                            "value": "41123594",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "description": "get all EPR request details by id(including license id if uplaoded & request status)"
+            },
+            "response": [
+                {
+                    "id": "dc320ef8-11a6-4d8f-adb0-9c1eab060637",
+                    "name": "request details returned successfully",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/eprgetrequestbyid?RequestId=<integer>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprgetrequestbyid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"RequestId\": \"<integer>\",\n \"EventEnglishName\": \"<string>\",\n \"EventArabicName\": \"<string>\",\n \"EventEnglishDescription\": \"<string>\",\n \"EventArabicDescription\": \"<string>\",\n \"EventType\": \"<string>\",\n \"AttractiveDazzlingElementsToAudience\": \"<string>\",\n \"AreYouEventManager\": \"<string>\",\n \"EventOrganizer\": \"<string>\",\n \"Region\": \"<string>\",\n \"City\": \"<string>\",\n \"EntertainmentFacility\": \"<string>\",\n \"StreetName\": \"<string>\",\n \"PlaceName\": \"<string>\",\n \"VisitorCapacityPerSameMoment\": \"<string>\",\n \"VisitorCapacityPerDay\": \"<string>\",\n \"CarParkingsNumberForEvent\": \"<string>\",\n \"CarParkingsNumberForDisabled\": \"<string>\",\n \"TotalAreaInMeters\": \"<string>\",\n \"EventStartDate\": \"<string>\",\n \"EventEndDate\": \"<string>\",\n \"EventHijriStartDate\": \"<string>\",\n \"EventHijriEndDate\": \"<string>\",\n \"StartTime\": \"<string>\",\n \"StartTimeAmPm\": \"<string>\",\n \"EndTime\": \"<string>\",\n \"EndTimeAmPm\": \"<string>\",\n \"RepetitionPattern\": \"<string>\",\n \"EventDuration\": \"<string>\",\n \"ManagerName\": \"<string>\",\n \"ManagerEmail\": \"<string>\",\n \"ManagerPhoneNumber\": \"<string>\",\n \"ActivityType\": \"<string>\",\n \"ActivityDescription\": \"<string>\",\n \"AudienceMaxNumberPerDay\": \"<string>\",\n \"AudienceMinNumberPerDay\": \"<string>\",\n \"AudienceExpectedMaxNumberPerMoment\": \"<string>\",\n \"AudienceExpectedTotalNumber\": \"<string>\",\n \"AudienceType\": \"<string>\",\n \"MinimumAge\": \"<string>\",\n \"TicketCategory\": \"<string>\",\n \"TicketAdvantages\": \"<string>\",\n \"TicketPrice\": \"<string>\",\n \"IndividualTicketsNumber\": \"<string>\",\n \"FamilyTicketsNumber\": \"<string>\",\n \"TicketingPlatform\": \"<string>\",\n \"ParticipantFullName\": \"<string>\",\n \"ParticipantRole\": \"<string>\",\n \"ParticipantNationality\": \"<string>\",\n \"ParticipantIdOrPassportNumber\": \"<string>\",\n \"MarketingMethodOrChannel\": \"<string>\",\n \"MarketingMethodOrChannelDescription\": \"<string>\",\n \"MarketingNotes\": \"<string>\",\n \"Facebook\": \"<string>\",\n \"Twitter\": \"<string>\",\n \"Instagram\": \"<string>\",\n \"YouTube\": \"<string>\",\n \"LinkedIn\": \"<string>\",\n \"FavoriteHashtag\": \"<string>\",\n \"FavoriteKeywords\": \"<string>\",\n \"PreferredShownMessagesinSocialMedia\": \"<string>\",\n \"OrganizationalJobTitle\": \"<string>\",\n \"OrganizationalName\": \"<string>\",\n \"OrganizationalPhoneNumber\": \"<string>\",\n \"OrganizationalEmail\": \"<string>\",\n \"RequestStatus\": \"<string>\"\n}"
+                },
+                {
+                    "id": "0dc88ca1-6fb8-437d-ba2e-1359c708c476",
+                    "name": "400 Bad Request",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/eprgetrequestbyid?RequestId=<integer>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprgetrequestbyid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                },
+                {
+                    "id": "227f7631-3e46-4d30-a357-39ca53718cbf",
+                    "name": "404 Not Found",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/eprgetrequestbyid?RequestId=<integer>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprgetrequestbyid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                },
+                {
+                    "id": "3d398868-06f9-41a1-84f6-e943937a3588",
+                    "name": "internal error in Appian System",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/eprgetrequestbyid?RequestId=<integer>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprgetrequestbyid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "get any uploaded document by it's Appian doc id",
+            "id": "59ac9b12-f5ec-451e-8f0e-8800f58485c4",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-API-Key",
+                        "value": "cillum consequat velit aliqua in"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/eprdownloaddocumentbyrequestid?RequestId=41123594&DocumentType=EventLogo",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "eprdownloaddocumentbyrequestid"
+                    ],
+                    "query": [
+                        {
+                            "key": "RequestId",
+                            "value": "41123594",
+                            "description": "(Required) "
+                        },
+                        {
+                            "key": "DocumentType",
+                            "value": "EventLogo"
+                        }
+                    ]
+                },
+                "description": "get any uploaded document by it's Appian doc id"
+            },
+            "response": [
+                {
+                    "id": "3578d487-7ec4-4da5-b16a-62269fc4216f",
+                    "name": "return the document",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/eprdownloaddocumentbyrequestid?RequestId=<integer>&DocumentType=<string>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprdownloaddocumentbyrequestid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "<string>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "disabled": false,
+                            "description": "name.extension",
+                            "key": "File-Name",
+                            "value": "<string>"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "\"<binary>\""
+                },
+                {
+                    "id": "74fd9694-0e17-4ff5-b798-5b277140f9f6",
+                    "name": "400 Bad Request",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/eprdownloaddocumentbyrequestid?RequestId=<integer>&DocumentType=<string>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprdownloaddocumentbyrequestid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "<string>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                },
+                {
+                    "id": "53eb3cd3-89ac-4f48-8029-d44361b98d39",
+                    "name": "404 Not Found",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/eprdownloaddocumentbyrequestid?RequestId=<integer>&DocumentType=<string>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprdownloaddocumentbyrequestid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "<string>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                },
+                {
+                    "id": "157bc60f-d030-48d9-b754-2936eb6e1626",
+                    "name": "internal error in Appian System",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "<string>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/eprdownloaddocumentbyrequestid?RequestId=<integer>&DocumentType=<string>",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "eprdownloaddocumentbyrequestid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "<integer>"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "<string>"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"<string>\"\n}"
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "apikey",
+        "apikey": [
+            {
+                "key": "value",
+                "value": "{{Appian-API-Key}}",
+                "type": "string"
+            },
+            {
+                "key": "key",
+                "value": "Appian-API-Key",
+                "type": "string"
+            }
+        ]
+    },
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "31892aa1-d6f4-4ec8-93d4-9e3a1b7ba15e",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "7bd4936c-7f65-4e16-ae8b-5c1329e55218",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "id": "63a51787-c72c-4605-af85-2ff4f2d2d64b",
+            "value": ""
+        }
+    ]
+}
